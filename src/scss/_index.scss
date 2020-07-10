@@ -1,10 +1,12 @@
 @import "partials/*";
 
-* {
-  margin: 0;
-  padding: 0;
+.sec__title {
+  text-align: center;
+  background: {
+    color: #f8f8f8;
+  }
+  padding: 20px 0;
 }
-
 
 .interview {
   .card {
@@ -12,8 +14,6 @@
   }
 }
 
-
-
 .footer {
-  background: linear-gradient(blue, green);
+  background: linear-gradient(#20b2aa, green);
 }
