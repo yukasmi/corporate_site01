@@ -1,4 +1,19 @@
+@import "partials/*";
+
 * {
   margin: 0;
   padding: 0;
+}
+
+
+.interview {
+  .card {
+    @include card();
+  }
+}
+
+
+
+.footer {
+  background: linear-gradient(blue, green);
 }

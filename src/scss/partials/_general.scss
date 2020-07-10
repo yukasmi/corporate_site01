@@ -6,3 +6,23 @@
 .inner {
   @include inner();
 }
+
+@mixin card() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin btn() {
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  border: 1px solid #f4f4f4;
+  padding: 4px 0;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  @include btn();
+}
