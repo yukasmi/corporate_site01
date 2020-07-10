@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../../src/scss/style.scss",
+		"../../src/scss/_index.scss",
+		"../../partials/*",
+		"../../src/scss/partials/_general.scss"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AEED,AAAA,MAAM,CAAC;EAJL,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,MAAM;CAKf"
+}
