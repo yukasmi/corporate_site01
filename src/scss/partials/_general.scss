@@ -111,6 +111,23 @@ a {
   }
 }
 
+.topScroll {
+  display: block;
+  right: 30px;
+  background-color: $main-color;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (max-width: 767px) {
   .forPc {
     display: none;
