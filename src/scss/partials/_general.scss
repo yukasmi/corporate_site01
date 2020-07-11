@@ -7,6 +7,8 @@
 
 $content-width: 1200px;
 
+$main-color: #20b2aa;
+
  * {
   margin: 0;
   padding: 0;
@@ -14,6 +16,13 @@ $content-width: 1200px;
 
  img {
    width: 100%;
+ }
+
+ .forPc {
+   display: block;
+ }
+ .forSp {
+   display: none;
  }
 
 .header,
@@ -35,7 +44,7 @@ section {
   display: flex;
   flex-wrap: wrap;
 
-  &__conponent {
+  &__component {
     box-shadow: 0 0 5px 0 #cecece;
     width: calc((100% / 3) - 10px);
   }
@@ -87,13 +96,25 @@ ol, ul {
 a {
   text-decoration: none;
   color: #000;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 @media (max-width: 767px) {
+  .forPc {
+    display: none;
+  }
+  .forSp {
+    display: block;
+  }
   .inner {
     @include inner(
       100%
     );
+    padding: 0 2%;
+    box-sizing: border-box;
   }
   .header,
   .footer {
