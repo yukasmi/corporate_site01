@@ -25,10 +25,10 @@ $(document).ready(function(){
 // });
 
 $(function(){
-  // SP時のヘッダーの高さ調節
+  // PC, SP時のヘッダーの高さ調節
     $(window).on('load resize', function() {
       $(document).ready(function () {
-        if (window.matchMedia( '(max-width: 767px)' ).matches) {
+        if (window.matchMedia( '(max-width: 767px),(min-width: 768px)' ).matches) {
           hsize = $('header').height();
           $(".content").css("padding-top", hsize + "px");
         }else {
@@ -36,6 +36,7 @@ $(function(){
         }
       });
     });
+
   // SPメニュー
     $('.nav_buttom').click(function () {
       $(this).toggleClass('active');
