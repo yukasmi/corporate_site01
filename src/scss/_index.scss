@@ -6,6 +6,7 @@
   color: #fff;
   border-bottom: #e2e2e2 solid 1px;
   position: fixed;
+  z-index: 10;
 
   .inner {
     display: flex;
@@ -45,6 +46,10 @@
 
       a {
         color: #fff;
+        border-bottom: 1px solid transparent;
+        &:hover {
+          border-bottom: 1px solid #fff;
+        }
       }
       &:last-child {
         margin-right: 0;
