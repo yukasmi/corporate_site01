@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap');
+
+* {
+  font-family: 
+  // 'Roboto', sans-serif,
+  'Noto Serif JP', serif;
+}
+
 @mixin inner(
   $content-width: 1200px
 ) {
@@ -62,7 +71,7 @@ section {
   background: $bg;
   color: $color;
   border: 1px solid #fff;
-  padding: 10px 0;
+  padding: 6px 0;
   width: 200px;
   margin: 0 auto;
   text-align: center;
@@ -126,3 +135,5 @@ a {
     min-width: 100%;
   }
 }
+
+
