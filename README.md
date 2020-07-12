@@ -1,6 +1,10 @@
 # description
 コーポレートサイト
 
+# 開発環境
+- npm-scripts
+- vscode
+
 # URL
 http://qlpt.sakura.ne.jp/corporate01/
 
