@@ -14,12 +14,11 @@
     align-items: center;
     padding: 10px 0;
   }
-
 }
 
 .logo {
   font-size: 30px;
-color: #fff;
+  color: #fff;
 }
 
 .header__right {
@@ -27,12 +26,10 @@ color: #fff;
     display: flex;
     margin-left: auto;
     width: 500px;
-
     margin-bottom: 20px;
 
     .btn {
       margin-right: 20px;
-
 
       &:last-child {
         margin-right: 0;
@@ -265,7 +262,6 @@ section {
       }
     }
   }
-
 }
 
 // footer
