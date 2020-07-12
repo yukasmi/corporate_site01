@@ -1,8 +1,5 @@
-# 
+# URL
+http://qlpt.sakura.ne.jp/corporate01/
 
 # やりたいこと
-お知らせ部分
-フォント
-
-SP対応
-ハンバーガーメニューなど
+他の下層ページ作成
