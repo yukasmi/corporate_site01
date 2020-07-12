@@ -40,15 +40,16 @@
     li {
       margin-right: 20px;
 
-      &:before {
-        content: ">";
-      }
+      
 
       a {
         color: #fff;
         border-bottom: 1px solid transparent;
         &:hover {
           border-bottom: 1px solid #fff;
+        }
+        &:before {
+          content: ">";
         }
       }
       &:last-child {
@@ -373,5 +374,107 @@ section {
   }
   .copyright {
     text-align: center;
+  }
+
+  nav {
+    background-color: #000;
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+    li {
+      width: 100%;
+      border-bottom: 1px solid #fff;
+      a {
+        display: block;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .nav_area_sp .nav_area_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    display: none;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  .nav_area_sp .nav_buttom {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    right: 3%;
+    z-index: 1001;
+    outline: none;
+  }
+  .nav_area_sp span {
+    display: block;
+    height: 5px;
+    transition: all 0.4s;
+    border-radius: 20px;
+    background: $main-color;
+  }
+  .nav_area_sp span:nth-of-type(2) {
+    margin: 8px auto;
+  }
+  .nav_area_sp span {
+    display: block;
+    height: 5px;
+    transition: all 0.4s;
+    border-radius: 4px;
+    background: #fff;
+  }
+  .nav_area_sp .nav_buttom.active span {
+    background: $main-color;
+  }
+  .nav_area_sp .nav_buttom.active span:first-of-type {
+    transform: translateY(13px) rotate(-315deg);
+  }
+  .nav_area_sp .nav_buttom.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .nav_area_sp .nav_buttom.active span:last-of-type {
+    transform: translateY(-13px) rotate(315deg);
+}
+
+  .nav_area_sp nav {
+    width: 80%;
+    height: 100%;
+    transition: all 0.4s;
+    transform: translate(110%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #000;
+    padding: 40px;
+  }
+  .nav_area_sp nav.open {
+    transform: translate(0);
+  }
+  .nav_area_sp .nav_buttom {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    right: 3%;
+    z-index: 1001;
+    outline: none;
   }
 }
